@@ -1,0 +1,21 @@
+@charset "utf-8";
+/* CSS Document */
+
+*{margin:0;padding:0;}
+li{list-style:none;}
+a{text-decoration:none;}
+
+/*溢出隐藏出现省略号*/
+.over{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;}
+
+/*图片水平垂直居中*/
+.valign{text-align:center;}
+.valign img{vertical-align:middle;}
+.valign:after{content:"";display:inline-block;vertical-align:middle;height:100%;}
+
+/*解决margin-top向上传递问题*/
+.clear:before{content:"";display:table;}
+/*清除浮动*/
+.clear:after{content:"";clear:both;display:block;}
+
+
